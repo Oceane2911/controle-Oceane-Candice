@@ -20,4 +20,13 @@ a {
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
+h1 {
+  font-size: 60px;
+}
+
+p,
+a {
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=global.css.map */
