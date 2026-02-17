@@ -1,0 +1,92 @@
+@use "../abstract" as *;
+
+.exemple {
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background;
+
+  @include xl {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__img {
+    width: 50%;
+    height: 30rem;
+    margin-right: 50px;
+
+    @include xl {
+      height: auto;
+      margin-bottom: 50px;
+      margin-right: 0;
+      margin-top: 50px;
+    }
+  }
+  &__informations {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__informations__legende {
+    margin-bottom: 5px;
+  }
+  &__informations__title {
+    margin-bottom: 20px;
+  }
+  &__informations__price {
+    font-weight: $gras;
+    margin-bottom: 10px;
+  }
+  &__informations__description {
+    margin-bottom: 30px;
+  }
+
+  &__descriptionProduit {
+    display: flex;
+
+    @include xl {
+      justify-content: center;
+    }
+
+    &__bloc1 {
+      margin-right: 80px;
+      margin-bottom: 50px;
+
+      &__part1 {
+        margin-bottom: 20px;
+      }
+    }
+    &__bloc2 {
+      margin-bottom: 80px;
+    }
+    &__bloc2__part1 {
+      margin-bottom: 20px;
+    }
+  }
+  &__blocButton {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: $bloc;
+    width: 12rem;
+    padding: 10px;
+    border-radius: 5px;
+
+    @include xl {
+      margin-bottom: 50px;
+    }
+
+    &__icon {
+      margin-left: 20px;
+      color: $white;
+    }
+  }
+}

@@ -12,13 +12,16 @@ $littleTitleSize: 45px;
 $textSize: 16px;
 $legendeSize: 12px;
 
-/*fontWeigh*/
+/*fontWeigth*/
 
 $normal: 300;
-$gras: 800;
+$gras: 700;
 
 /*colors*/
 
 $background: #372f8b;
 $bloc: #9995c6;
 $white: #f8f8f8;
+$grey: grey;
+
+$transition: 0.35s cubic-bezier(0.77, 0, 0.175, 1);

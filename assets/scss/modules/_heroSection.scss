@@ -12,6 +12,11 @@
 
   &__bloc {
     width: 25rem;
+
+    @include sm {
+      width: 15rem;
+      margin: 20px;
+    }
   }
 
   &__title {
@@ -34,6 +39,11 @@
     display: flex;
     align-items: center;
 
+    @include sm {
+      flex-direction: column;
+      gap: 15px;
+    }
+
     &__blocOne {
       width: 150px;
       background-color: $background;
@@ -43,6 +53,13 @@
       justify-content: center;
       align-items: center;
       padding: 10px;
+
+      @include sm {
+        width: 200px;
+      }
+    }
+    &__blocOne:hover {
+      background-color: $bloc;
     }
 
     &__buttonOne {
@@ -58,6 +75,10 @@
       justify-content: center;
       align-items: center;
       padding: 10px;
+    }
+
+    &__blocTwo:hover {
+      background-color: $bloc;
     }
 
     &__buttonTwo {

@@ -14,23 +14,32 @@
         <div class="nav-barre__title">
             <h1>STEP<span>FORGE</span></h1>
         </div>
-        <div class="nav-barre__li">
+
+        <div class="nav-barre__li nav" id="navigation">
             <ul>
-                <li><a href="" aria-label="accueil">Accueil</a></li>
+                <li><a href="#accueil" class="active" aria-label="accueil">Accueil</a></li>
                 <li><a href="#collection" aria-label="collection">Collection</a></li>
-                <li><a href="" aria-label="a propos">à Propros</a></li>
-                <li><a href="" aria-label="contact">Contact</a></li>
+                <li><a href="#a-propos" aria-label="à propos">À Propos</a></li>
+                <li><a href="#contact" aria-label="contact">Contact</a></li>
             </ul>
         </div>
+
         <div class="nav-barre__icon">
             <ion-icon name="bag-outline"></ion-icon>
-            <ion-icon name="menu-outline"></ion-icon>
+            <button class="burger-menu" aria-label="menu burger" aria-controls="navigation">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
         </div>
     </nav>
-    <div class="heroSection">
+
+    <div class="nav-overlay"></div>
+    <div class="nav-overlay"></div>
+    <div class="heroSection" id="accueil">
         <div class="heroSection__bloc">
             <p class="heroSection__legende">Nouvelle collection 2026</p>
-            <h1 class="heroSection__title">WALK THE FUTURE <span class="heroSection__title__point">.</span></h1>
+            <h1 class="heroSection__title">
+                WALK THE FUTURE <span class="heroSection__title__point">.</span>
+            </h1>
             <p class="heroSection__description">
                 Des sneakers premium conçues pour ceux qui donnent le rythme. Confort
                 inégalé, design audacieux, attitude streetwear.
@@ -65,7 +74,6 @@
                     <div class="produit__card-bloc__card__img">
                         <p class="produit__card-bloc__card__img__label">NOUVEAU</p>
                         <ion-icon name="heart-outline" class="produit__card-bloc__card__img__like"></ion-icon>
-                        
                     </div>
                     <div class="produit__card-bloc__card__description">
                         <p>StepForge</p>
@@ -81,7 +89,6 @@
                     <div class="produit__card-bloc__card__img">
                         <p class="produit__card-bloc__card__img__label">NOUVEAU</p>
                         <ion-icon name="heart-outline" class="produit__card-bloc__card__img__like"></ion-icon>
-                        
                     </div>
                     <div class="produit__card-bloc__card__description">
                         <p>StepForge</p>
@@ -97,7 +104,6 @@
                     <div class="produit__card-bloc__card__img">
                         <p class="produit__card-bloc__card__img__label">NOUVEAU</p>
                         <ion-icon name="heart-outline" class="produit__card-bloc__card__img__like"></ion-icon>
-                        
                     </div>
                     <div class="produit__card-bloc__card__description">
                         <p>StepForge</p>
@@ -113,7 +119,6 @@
                     <div class="produit__card-bloc__card__img">
                         <p class="produit__card-bloc__card__img__label">NOUVEAU</p>
                         <ion-icon name="heart-outline" class="produit__card-bloc__card__img__like"></ion-icon>
-                        
                     </div>
                     <div class="produit__card-bloc__card__description">
                         <p>StepForge</p>
@@ -129,7 +134,6 @@
                     <div class="produit__card-bloc__card__img">
                         <p class="produit__card-bloc__card__img__label">NOUVEAU</p>
                         <ion-icon name="heart-outline" class="produit__card-bloc__card__img__like"></ion-icon>
-                        
                     </div>
                     <div class="produit__card-bloc__card__description">
                         <p>StepForge</p>
@@ -145,7 +149,6 @@
                     <div class="produit__card-bloc__card__img">
                         <p class="produit__card-bloc__card__img__label">NOUVEAU</p>
                         <ion-icon name="heart-outline" class="produit__card-bloc__card__img__like"></ion-icon>
-                        
                     </div>
                     <div class="produit__card-bloc__card__description">
                         <p>StepForge</p>
@@ -160,10 +163,132 @@
             </div>
         </div>
     </section>
+    <div class="features" id="a-propos">
+        <div class="features__introduction">
+            <p>POURQUOI NOUS CHOISIR</p>
+            <h2>LA DIFFERENCE STEPFORCE</h2>
+        </div>
+        <div class="features__principalBloc">
+            <div class="features__bloc">
+                <ion-icon name="rocket-outline" class="features__bloc__icon"></ion-icon>
+                <h3 class="features__bloc__title">LIVRAISON RAPIDE</h3>
+                <p class="features__bloc__description">
+                    Livraison express gratuite sur toutes les commandes. Recevez vos
+                    sneakers sous 48h, partout en Europe.
+                </p>
+            </div>
+            <div class="features__bloc">
+                <ion-icon name="rocket-outline" class="features__bloc__icon"></ion-icon>
+                <h3 class="features__bloc__title">LIVRAISON RAPIDE</h3>
+                <p class="features__bloc__description">
+                    Livraison express gratuite sur toutes les commandes. Recevez vos
+                    sneakers sous 48h, partout en Europe.
+                </p>
+            </div>
+            <div class="features__bloc">
+                <ion-icon name="rocket-outline" class="features__bloc__icon"></ion-icon>
+                <h3 class="features__bloc__title">LIVRAISON RAPIDE</h3>
+                <p class="features__bloc__description">
+                    Livraison express gratuite sur toutes les commandes. Recevez vos
+                    sneakers sous 48h, partout en Europe.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="exemple">
+        <img src="assets/img/white-card.webp" alt="chaussures nike modèle Phantom runner X" class="exemple__img">
+        <div class="exemple__informations">
+            <p class="exemple__informations__legende">COUP DE COEUR</p>
+            <h2 class="exemple__informations__title">PHANTOM RUNNER X</h2>
+            <p class="exemple__informations__price">189,00€</p>
+            <p class="exemple__informations__description">Conçue pour la rue la Phantom Runner X combine une tige légère
+                en mesh avec notre technologie d'amorti.
+                ForgeStep pour un confort toute la journée, sans compromis sur le style.</p>
+            <div class="exemple__descriptionProduit">
+                <div class="exemple__descriptionProduit__bloc1">
+                    <div class="exemple__descriptionProduit__bloc1__part1">
+                        <p><strong>MATERIAU</strong></p>
+                        <P>Mèche tricoté</P>
+                    </div>
+                    <div class="exemple__descriptionProduit__bloc1__part2">
+                        <p><strong>SEMELLE</strong></p>
+                        <P>ForgeStp</P>
+                    </div>
+                </div>
+                <div class="exemple__descriptionProduit__bloc2">
+                    <div class="exemple__descriptionProduit__bloc2__part1">
+                        <p><strong>POIDS</strong></p>
+                        <P>285g</P>
+                    </div>
+                    <div class="exemple__descriptionProduit__bloc2__part2">
+                        <p><strong>TAILLES</strong></p>
+                        <P>36-48</p>
+                    </div>
+                </div>
+            </div>
+            <div class="exemple__blocButton">
+                <ion-icon name="bag-add-outline" class="exemple__blocButton__icon"></ion-icon>
+                <p class="exemple__blocButton__text">Ajouter au panier</p>
+            </div>
+        </div>
+
+    </div>
+    <footer id="contact">
+        <div class="section1">
+            <div class="section1__boutique">
+                <h3>BOUTIQUE</h3>
+                <ul class="section1__boutique__list">
+                    <li>Nouveautés</li>
+                    <li>Meilleures ventes</li>
+                    <li>Homme</li>
+                    <li>Femme</li>
+                    <li>Promotions</li>
+                </ul>
+            </div>
+            <div class="section1__aide">
+                <h3>AIDE</h3>
+                <ul class="section1__boutique__list">
+                    <li>FAQ</li>
+                    <li>Infos livraison</li>
+                    <li>Retours & échanges</li>
+                    <li>Guide des tailles</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
+            <div class="section1__legal">
+                <h3>Légal</h3>
+                <ul class="section1__boutique__list">
+                    <li>Politique de confidentialité</li>
+                    <li>Conditions générales</li>
+                    <li>Politique de cookies</li>
+                    <li>Accessibilité</li>
+                </ul>
+            </div>
+            <div class="section1__reseau">
+                <h3>SUIVEZ-NOUS</h3>
+                <ul>
+                    <li><ion-icon name="logo-instagram"></ion-icon></li>
+                    <li><ion-icon name="logo-twitter"></ion-icon></li>
+                    <li><ion-icon name="logo-tiktok"></ion-icon></li>
+                    <li><ion-icon name="logo-youtube"></ion-icon></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section2">
+            <p>2026 STEPFORGE.Tous droits réservés</p>
+            <div class="section2__left">
+                <p>confidentialité</p>
+                <p>CGV</p>
+                <p>cookies</p>
+            </div>
+        </div>
+
+    </footer>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
     <ion-icon name="heart-outline"></ion-icon>
 </script>
+<script src="assets/js/burger.js"></script>
 
 </html>

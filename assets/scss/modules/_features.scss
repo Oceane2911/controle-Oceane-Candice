@@ -1,0 +1,56 @@
+@use "../abstract" as *;
+
+.features {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  background-color: $bloc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  &__principalBloc {
+    display: flex;
+    align-items: center;
+    padding: 65px;
+    justify-content: space-evenly;
+
+    @include xl {
+      flex-direction: column;
+      gap: 80px;
+      padding: 20px;
+    }
+  }
+  &__bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+
+    @include xl {
+      width: 70%;
+    }
+
+    &__icon {
+      color: $white;
+      padding: 10px;
+      border: 1px solid $white;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      background-color: $background;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}
