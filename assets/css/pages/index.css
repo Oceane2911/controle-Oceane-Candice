@@ -279,10 +279,12 @@ body {
     margin-top: 50px;
   }
 }
-.exemple__informations {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+@media screen and (max-width: 1000px) {
+  .exemple__informations {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .exemple__informations__legende {
   margin-bottom: 5px;

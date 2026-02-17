@@ -31,9 +31,11 @@
     }
   }
   &__informations {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include xl {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
   }
   &__informations__legende {
     margin-bottom: 5px;
