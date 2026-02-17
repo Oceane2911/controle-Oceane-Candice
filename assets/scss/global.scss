@@ -1,0 +1,10 @@
+@use "./base/global";
+@use "./abstract" as *;
+
+h1,
+h2,
+p,
+a {
+  color: $white;
+  font-family: $fontstyle;
+}

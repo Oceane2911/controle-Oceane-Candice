@@ -1,0 +1,23 @@
+/*police*/
+/*fontsize*/
+/*fontWeigh*/
+/*colors*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+p,
+a {
+  color: #f8f8f8;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,18 @@
+.heroSection {
+  width: 100%;
+  height: auto;
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  &__bloc {
+    position: absolute;
+    top: 0;
+  }
+
+  &__legende {
+  }
+}

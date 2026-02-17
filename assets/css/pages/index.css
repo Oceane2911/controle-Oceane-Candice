@@ -1,0 +1,45 @@
+/*police*/
+/*fontsize*/
+/*fontWeigh*/
+/*colors*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.nav-barre {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: #372f8b;
+}
+.nav-barre__title h1 {
+  color: #f8f8f8;
+}
+.nav-barre__title span {
+  color: #9995c6;
+}
+.nav-barre__li ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+}
+.nav-barre__li ul a {
+  text-decoration: none;
+}
+.nav-barre__icon {
+  color: #f8f8f8;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.css.map */
